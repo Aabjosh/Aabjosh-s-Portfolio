@@ -101,7 +101,7 @@ export const ExperienceSection = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-20">
                 {work.map((exp, key) => (
-                    <div key={key} className="group bg-card/65 rounded-2xl overflow-hidden shadow-xs card-hover backdrop-blur-xs border-2 p-5">
+                    <div key={key} href={exp.external} target="_blank" rel="noopener noreferrer" className="group bg-card/65 rounded-2xl overflow-hidden shadow-xs card-hover backdrop-blur-xs border-2 p-5">
                         <div className="flex gap-2 items-center justify-between mb-2">
                             <h3 className="text-xl font-bold p-4 text-left">{exp.name}</h3>
                             <p className="text-muted-foreground text-md px-4 text-right">{exp.timeframe}</p>
@@ -113,9 +113,7 @@ export const ExperienceSection = () => {
                             {exp.description}
                         </p>
                         <div className="flex justify-center mb-4">
-                            <a href={exp.external} target="_blank" rel="noopener noreferrer">
-                                <img src={exp.picture} alt={exp.name} className="w-15 h-15 text-center"/>
-                            </a>
+                            <img src={exp.picture} alt={exp.name} className="w-15 h-15 text-center"/>
                         </div>
                     </div>
                 ))}

@@ -1,38 +1,38 @@
 const skills = [
   // Hardware
-  { name: "Arduino", level: 95, category: "⚙️ Hardware" },
-  { name: "Raspberry Pi", level: 85, category: "⚙️ Hardware" },
-  { name: "Circuit Board Prototyping", level: 85, category: "⚙️ Hardware" },
-  { name: "Drivetrain & Mechanical", level: 90, category: "⚙️ Hardware" },
+  { name: "Arduino", level: "Fluent", category: "⚙️ Hardware" },
+  { name: "Drivetrain & Mechanical", level: "Fluent", category: "⚙️ Hardware" },
+  { name: "Raspberry Pi", level: "Proficient", category: "⚙️ Hardware" },
+  { name: "Circuit Board Prototyping", level: "Proficient", category: "⚙️ Hardware" },
 
   // CAD Design
-  { name: "Fusion 360", level: 90, category: "📐 CAD Design" },
-  { name: "Inventor", level: 95, category: "📐 CAD Design" },
-  { name: "OnShape", level: 80, category: "📐 CAD Design" },
-  { name: "SOLIDWORKS", level: 95, category: "📐 CAD Design" },
+  { name: "Fusion 360", level: "Fluent", category: "📐 CAD Design" },
+  { name: "Inventor", level: "Fluent", category: "📐 CAD Design" },
+  { name: "SOLIDWORKS", level: "Fluent", category: "📐 CAD Design" },
+  { name: "OnShape", level: "Capable", category: "📐 CAD Design" },
 
   // Production
-  { name: "3D Printing", level: 95, category: "🛠️ Production" },
-  { name: "Lathe + Mill", level: 85, category: "🛠️ Production" },
-  { name: "Rapid Prototyping", level: 85, category: "🛠️ Production" },
-  { name: "Soldering", level: 90, category: "🛠️ Production" },
+  { name: "3D Printing", level: "Fluent", category: "🛠️ Production" },
+  { name: "Soldering", level: "Fluent", category: "🛠️ Production" },
+  { name: "Lathe + Mill", level: "Proficient", category: "🛠️ Production" },
+  { name: "Rapid Prototyping", level: "Proficient", category: "🛠️ Production" },
 
   // Software & Programming
-  { name: "C/C++", level: 85, category: "💻 Software" },
-  { name: "Python", level: 90, category: "💻 Software" },
-  { name: "Java", level: 90, category: "💻 Software" },
-  { name: "JavaScript", level: 70, category: "💻 Software" },
-  { name: "MicroPython", level: 85, category: "💻 Software" },
-  { name: "React", level: 70, category: "💻 Software" },
-  { name: "Tailwind CSS", level: 70, category: "💻 Software" },
-  { name: "OpenCV", level: 80, category: "💻 Software" },
-  { name: "PyTorch", level: 75, category: "💻 Software" },
-  { name: "PID Control", level: 75, category: "💻 Software" },
+  { name: "Python", level: "Fluent", category: "💻 Software" },
+  { name: "Java", level: "Fluent", category: "💻 Software" },
+  { name: "MicroPython", level: "Proficient", category: "💻 Software" },
+  { name: "C/C++", level: "Capable", category: "💻 Software" },
+  { name: "OpenCV", level: "Capable", category: "💻 Software" },
+  { name: "JavaScript", level: "Familiar", category: "💻 Software" },
+  { name: "React", level: "Familiar", category: "💻 Software" },
+  { name: "Tailwind CSS", level: "Familiar", category: "💻 Software" },
+  { name: "PyTorch", level: "Familiar", category: "💻 Software" },
+  { name: "PID Control", level: "Familiar", category: "💻 Software" },
 
   // Tools & DevOps
-  { name: "Git", level: 80, category: "🧰 Tools" },
-  { name: "Vercel", level: 80, category: "🧰 Tools" },
-  { name: "WPIlib", level: 85, category: "🧰 Tools" }
+  { name: "WPIlib", level: "Proficient", category: "🧰 Tools" },
+  { name: "Git", level: "Capable", category: "🧰 Tools" },
+  { name: "Vercel", level: "Capable", category: "🧰 Tools" },
 ]
 
 export const SkillsSection = () => {
@@ -68,14 +68,9 @@ export const SkillsSection = () => {
                                         <div className="mb-4">
                                             <h4 className="font-bold text-lg">{skill.name}</h4>
                                         </div>
-                                        <div className="flex items-center gap-3">
-                                            <div className="flex-1 bg-secondary/50 h-2 rounded-xl overflow-hidden">
-                                                <div 
-                                                    className="bg-primary h-2 rounded-xl origin-left animate-[grow_1.5s_ease-out]"
-                                                    style={{ width: skill.level + "%"}}
-                                                />
-                                            </div>
-                                            <span className="text-xs italic text-muted-foreground">{skill.level}%</span>
+                                        <div className="text-sm flex items-center gap-2 justify-center">
+                                            <span className="text-foreground">Level: </span>
+                                            <span className="text-primary font-bold animate-pulse-slow">{skill.level}</span>
                                         </div>
                                     </div>
                                 ))}

@@ -13,7 +13,7 @@
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
-  --animate-pulse-obvious: pulse-obvious 3s ease-in infinite;
+  --animate-pulse-slow: pulse-slow 3s ease-in infinite;
   --animate-bounce-scroll: bounce-scroll 3s ease-in infinite;
   --animate-fade-in: fade-in 0.7s ease-out forwards;
   --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forwards;
@@ -46,12 +46,12 @@
       opacity: 0.15;
     }
   }
-  @keyframes pulse-obvious {
+  @keyframes pulse-slow {
     0%, 100% {
         opacity: 1;
     }
     50% {
-        opacity: 0.1; /* Less dramatic than 0.1 */
+        opacity: 0.65; /* Less dramatic than 0.1 */
     }
   }
 

@@ -2,8 +2,8 @@ const skills = [
   // Hardware
   { name: "Arduino", level: "Fluent", category: "⚙️ Hardware" },
   { name: "Drivetrain & Mechanical", level: "Fluent", category: "⚙️ Hardware" },
-  { name: "Raspberry Pi", level: "Proficient", category: "⚙️ Hardware" },
   { name: "Circuit Board Prototyping", level: "Proficient", category: "⚙️ Hardware" },
+  { name: "Raspberry Pi", level: "Capable", category: "⚙️ Hardware" },
 
   // CAD Design
   { name: "Fusion 360", level: "Fluent", category: "📐 CAD Design" },

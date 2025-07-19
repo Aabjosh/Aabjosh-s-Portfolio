@@ -1,4 +1,4 @@
-import { ArrowBigDownDash, Github, GithubIcon, Linkedin, LucideGithub, Mail } from "lucide-react"
+import { ArrowBigDownDash, BriefcaseIcon, File, Github, GithubIcon, Linkedin, LucideGithub, Mail } from "lucide-react"
 
 
 export const HomeSection = () => {
@@ -32,17 +32,20 @@ export const HomeSection = () => {
                         </a>
                     </div>
                     <div className="flex justify-center gap-4 pt-0 opacity-0 animate-fade-in-delay-4">
-                        <a href="mailto:aabjosh0singh@gmail.com" className="p-3 rounded-full bg-primary/60 card-hover hover:scale-110 transition-transform duration-300">
+                        <a href="mailto:aabjosh0singh@gmail.com" className="p-3 rounded-full bg-primary/50 card-hover hover:scale-110 transition-transform duration-300">
                             {" "}
                             <Mail />
                         </a>
 
-                        <a href="https://linkedin.com/in/aabjosh" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary/60 card-hover hover:scale-110 transition-transform duration-300">
+                        <a href="https://linkedin.com/in/aabjosh" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary/50 card-hover hover:scale-110 transition-transform duration-300">
                             <Linkedin />
                         </a>
 
-                        <a href="https://github.com/Aabjosh" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary/60 card-hover hover:scale-110 transition-transform duration-300">
+                        <a href="https://github.com/Aabjosh" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary/50 card-hover hover:scale-110 transition-transform duration-300">
                             <Github />
+                        </a>
+                        <a href="https://drive.google.com/file/d/1YG7DlP0Pslf46Dktwe5Aurz-xwBrK2bp/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary/50 card-hover hover:scale-110 transition-transform duration-300">
+                            <File />
                         </a>
                     </div>
                 </div>

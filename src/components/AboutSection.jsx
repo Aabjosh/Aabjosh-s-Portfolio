@@ -38,7 +38,7 @@ export const AboutSection = () => {
                             Let's Talk
                         </a>
 
-                        <a href="https://drive.google.com/file/d/1h13-NuTz5wGVzDdME354MQrx0XffLtFv/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary/10 transition-colors duration-300 ">
+                        <a href="https://drive.google.com/file/d/1YG7DlP0Pslf46Dktwe5Aurz-xwBrK2bp/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary/10 transition-colors duration-300 ">
                             {" "}
                             See my CV
                         </a>

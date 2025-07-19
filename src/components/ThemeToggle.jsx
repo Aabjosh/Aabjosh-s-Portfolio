@@ -3,28 +3,28 @@ import { useEffect, useState } from "react";
 import {cn} from "@/lib/utils";
 
 export const ThemeToggle = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isLightMode, setIsLightMode] = useState(false);
 
     useEffect(() => {
         const storedTheme = localStorage.getItem("theme")
-        if (storedTheme === "dark") {
-            setIsDarkMode(true)
-            document.documentElement.classList.add("dark");
+        if (storedTheme === "light") {
+            setIsLightMode(true)
+            document.documentElement.classList.add("light");
         } else {
-            setIsDarkMode(false)
-            document.documentElement.classList.remove("dark");
+            setIsLightMode(false)
+            document.documentElement.classList.remove("light");
         }
     }, [])
 
     const toggleTheme = () => {
-        if (isDarkMode) {
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("theme", "light");
-            setIsDarkMode(false);
-        } else {
-            document.documentElement.classList.add("dark");
+        if (isLightMode) {
+            document.documentElement.classList.remove("light");
             localStorage.setItem("theme", "dark");
-            setIsDarkMode(true);
+            setIsLightMode(false);
+        } else {
+            document.documentElement.classList.add("light");
+            localStorage.setItem("theme", "light");
+            setIsLightMode(true);
         }
     };
 
@@ -32,10 +32,10 @@ export const ThemeToggle = () => {
         <button onClick={toggleTheme} 
             className={cn(
                 "fixed bottom-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
-                "focus:outlin-hidden"
+                "focus:outline-hidden"
         )}
         >
-            {isDarkMode ? (
+            {isLightMode ? (
                 <Sun className="h-6 w-6 text-yellow-300" />
             ) : (
                 <Moon className="h-6 w-6 text-blue-600" />

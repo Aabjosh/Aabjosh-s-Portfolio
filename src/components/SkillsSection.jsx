@@ -28,12 +28,11 @@ const skills = [
   { name: "OpenCV", level: 80, category: "💻 Software" },
   { name: "PyTorch", level: 75, category: "💻 Software" },
   { name: "PID Control", level: 75, category: "💻 Software" },
-  { name: "WPILib", level: 85, category: "💻 Software" },
 
   // Tools & DevOps
   { name: "Git", level: 80, category: "🧰 Tools" },
   { name: "Vercel", level: 80, category: "🧰 Tools" },
-  { name: "Vite", level: 70, category: "🧰 Tools" }
+  { name: "WPIlib", level: 85, category: "🧰 Tools" }
 ]
 
 export const SkillsSection = () => {

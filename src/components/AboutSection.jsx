@@ -49,7 +49,7 @@ export const AboutSection = () => {
                 <div className="grid grid-cols-1 gap-6">
                     <div className="gradient-border p-6 card-hover rounded-4xl">
                         <div className="flex items-start gap-4">
-                            <div className="p-3 rounded-full bg-primary/35">
+                            <div className="p-3 rounded-full bg-primary/50">
                                 <Settings className="h-8 w-8"/>
                             </div>
                             <div className="text-left">
@@ -62,7 +62,7 @@ export const AboutSection = () => {
                     </div>
                     <div className="gradient-border p-6 card-hover rounded-4xl">
                         <div className="flex items-start gap-4">
-                            <div className="p-3 rounded-full bg-primary/35">
+                            <div className="p-3 rounded-full bg-primary/50">
                                 <Code2Icon className="h-8 w-8"/>
                             </div>
                             <div className="text-left">
@@ -77,7 +77,7 @@ export const AboutSection = () => {
                     </div>
                     <div className="gradient-border p-6 card-hover rounded-4xl">
                         <div className="flex items-start gap-4">
-                            <div className="p-3 rounded-full bg-primary/35">
+                            <div className="p-3 rounded-full bg-primary/50">
                                 <Handshake className="h-8 w-8"/>
                             </div>
                             <div className="text-left">

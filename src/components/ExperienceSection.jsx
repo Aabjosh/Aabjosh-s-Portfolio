@@ -101,21 +101,23 @@ export const ExperienceSection = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-20">
                 {work.map((exp, key) => (
-                    <div key={key} href={exp.external} target="_blank" rel="noopener noreferrer" className="group bg-card/65 rounded-2xl overflow-hidden shadow-xs card-hover backdrop-blur-xs border-2 p-5">
-                        <div className="flex gap-2 items-center justify-between mb-2">
-                            <h3 className="text-xl font-bold p-4 text-left">{exp.name}</h3>
-                            <p className="text-muted-foreground text-md px-4 text-right">{exp.timeframe}</p>
+                    <a href={exp.external} target="_blank" rel="noopener noreferrer">
+                        <div key={key} className="group bg-card/65 rounded-2xl overflow-hidden shadow-xs card-hover backdrop-blur-xs border-2 p-5">
+                            <div className="flex gap-2 items-center justify-between mb-2">
+                                <h3 className="text-xl font-bold p-4 text-left">{exp.name}</h3>
+                                <p className="text-muted-foreground text-md px-4 text-right">{exp.timeframe}</p>
+                            </div>
+                            <h3 className="text-left px-4 text-md font-bold text-primary mb-2">
+                                {exp.position}
+                            </h3>
+                            <p className="p-5 text-sm text-foreground text-left mb-8">
+                                {exp.description}
+                            </p>
+                            <div className="flex justify-center mb-4">
+                                <img src={exp.picture} alt={exp.name} className="w-15 h-15 text-center"/>
+                            </div>
                         </div>
-                        <h3 className="text-left px-4 text-md font-bold text-primary mb-2">
-                            {exp.position}
-                        </h3>
-                        <p className="p-5 text-sm text-foreground text-left mb-8">
-                            {exp.description}
-                        </p>
-                        <div className="flex justify-center mb-4">
-                            <img src={exp.picture} alt={exp.name} className="w-15 h-15 text-center"/>
-                        </div>
-                    </div>
+                    </a>
                 ))}
             </div>
         </div>

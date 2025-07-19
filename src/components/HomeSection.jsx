@@ -10,7 +10,7 @@ export const HomeSection = () => {
             <div className="container max-w-4xl mx-auto text-center z-5">
                 <div className="space-y-6">
                     <h1 className="text-4xl md:text-6xl font-light tracking-tight">
-                        <span className="opacity-0 animate-fade-in"> Hey there, </span>
+                        <span className="opacity-0 animate-fade-in"> Hi there, </span>
                         <span className="opacity-0 animate-fade-in-delay-1"> my name is</span>
                     </h1>
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-10">

@@ -28,8 +28,8 @@ export const AboutSection = () => {
                     </p>
 
                     <p className="texst-muted-foreground">
-                        I also enjoy photography as a hobby! Feel free to check out my <a href="https://unsplash.com/@aabjosh" target="_blank" rel="noopener noreferrer" className="font-bold text-foreground underline">Unsplash. </a>
-                          You might catch me out on a run too - I used to compete at a national level in track and field.
+                        I also enjoy photography as a hobby! Feel free to check out my <a href="https://unsplash.com/@aabjosh" target="_blank" rel="noopener noreferrer" className="font-bold text-foreground underline">Unsplash</a>
+                          . You might catch me out on a run too - I used to compete at a national level in track and field.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">

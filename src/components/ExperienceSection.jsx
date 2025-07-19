@@ -93,7 +93,7 @@ export const ExperienceSection = () => {
                 ))}
             </div>
             <h2 className="text-3xl md:text-3xl font-medium mb-8 text-center">Initiatives and Work:</h2>
-            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto font-bold">
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-sm">
                 Tap/click on the cards to visit their websites!
             </p>
             <div className="flex justify-center mb-12">

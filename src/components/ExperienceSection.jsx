@@ -93,15 +93,16 @@ export const ExperienceSection = () => {
                 ))}
             </div>
             <h2 className="text-3xl md:text-3xl font-medium mb-8 text-center">Initiatives and Work:</h2>
+            
+            <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto text-sm">
+                Tap/click on the cards to visit their websites!
+            </p>
             <div className="flex justify-center mb-12">
                 <a href="https://drive.google.com/file/d/1YG7DlP0Pslf46Dktwe5Aurz-xwBrK2bp/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="cosmic-button">
                     {" "}
                     See my CV
                 </a>
-            </div>
-            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-sm">
-                Tap/click on the cards to visit their websites!
-            </p> 
+            </div> 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-20">
                 {work.map((exp, key) => (
                     <a href={exp.external} target="_blank" rel="noopener noreferrer">

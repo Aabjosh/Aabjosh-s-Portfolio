@@ -64,7 +64,7 @@ export const SkillsSection = () => {
                             </h3>
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                                 {categorySkills.map((skill, key) => (
-                                    <div key={key} className="bg-card/65 p-6 rounded-xl shadow-xs card-hover flex flex-col justify-center backdrop-blur-xs">
+                                    <div key={key} className="bg-card/65 p-6 rounded-xl shadow-xs card-hover flex flex-col justify-center backdrop-blur-xs border-2">
                                         <div className="mb-4">
                                             <h4 className="font-bold text-lg">{skill.name}</h4>
                                         </div>

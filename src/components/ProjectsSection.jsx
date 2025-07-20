@@ -39,7 +39,7 @@ export const ProjectsSection = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-20">
                 {projects.map((project, key) => (
-                    <div key={key} className="group bg-card/70 rounded-2xl overflow-hidden shadow-xs card-hover backdrop-blur-xs border-2">
+                    <div key={key} className="group bg-card/70 rounded-4xl overflow-hidden shadow-xs card-hover backdrop-blur-xs border-2">
                         <div className="h-64 overflow-hidden">
                             <img 
                                 src={project.image} 

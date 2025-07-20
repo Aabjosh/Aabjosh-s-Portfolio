@@ -74,7 +74,7 @@ export const ExperienceSection = () => {
             <h2 className="text-3xl md:text-3xl font-medium mb-8 text-center">Education:</h2>
             <div className="grid grid-cols-1 gap-4 mb-20">
                 {education.map((edu, key) => (
-                    <div key={key} className="group bg-primary/50 rounded-2xl overflow-hidden shadow-xs card-hover backdrop-blur-xs p-5">
+                    <div key={key} className="group bg-primary/50 rounded-4xl overflow-hidden shadow-xs card-hover backdrop-blur-xs p-5">
                         <div className="flex gap-2 items-center justify-between mb-2">
                             <h3 className="text-xl font-bold px-4 italic text-left">{edu.name}</h3>
                             <p className="text-muted-foreground px-4 text-right">{edu.timeframe}</p>
@@ -93,31 +93,35 @@ export const ExperienceSection = () => {
                 ))}
             </div>
             <h2 className="text-3xl md:text-3xl font-medium mb-8 text-center">Initiatives and Work:</h2>
+            
+            <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto text-sm">
+                Tap/click on the cards to visit their websites!
+            </p>
             <div className="flex justify-center mb-12">
                 <a href="https://drive.google.com/file/d/1YG7DlP0Pslf46Dktwe5Aurz-xwBrK2bp/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="cosmic-button">
                     {" "}
                     See my CV
                 </a>
-            </div>
+            </div> 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-20">
                 {work.map((exp, key) => (
-                    <div key={key} className="group bg-card/65 rounded-2xl overflow-hidden shadow-xs card-hover backdrop-blur-xs border-2 p-5">
-                        <div className="flex gap-2 items-center justify-between mb-2">
-                            <h3 className="text-xl font-bold p-4 text-left">{exp.name}</h3>
-                            <p className="text-muted-foreground text-md px-4 text-right">{exp.timeframe}</p>
-                        </div>
-                        <h3 className="text-left px-4 text-md font-bold text-primary mb-2">
-                            {exp.position}
-                        </h3>
-                        <p className="p-5 text-sm text-foreground text-left mb-8">
-                            {exp.description}
-                        </p>
-                        <div className="flex justify-center mb-4">
-                            <a href={exp.external} target="_blank" rel="noopener noreferrer">
+                    <a href={exp.external} target="_blank" rel="noopener noreferrer">
+                        <div key={key} className="group bg-card/65 rounded-4xl overflow-hidden shadow-xs card-hover backdrop-blur-xs border-2 p-5">
+                            <div className="flex gap-2 items-center justify-between mb-2">
+                                <h3 className="text-xl font-bold p-4 text-left">{exp.name}</h3>
+                                <p className="text-muted-foreground text-md px-4 text-right">{exp.timeframe}</p>
+                            </div>
+                            <h3 className="text-left px-4 text-md font-bold text-primary mb-2">
+                                {exp.position}
+                            </h3>
+                            <p className="p-5 text-sm text-foreground text-left mb-8">
+                                {exp.description}
+                            </p>
+                            <div className="flex justify-center mb-4">
                                 <img src={exp.picture} alt={exp.name} className="w-15 h-15 text-center"/>
-                            </a>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 ))}
             </div>
         </div>

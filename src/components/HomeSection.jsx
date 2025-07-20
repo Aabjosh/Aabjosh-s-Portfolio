@@ -10,7 +10,7 @@ export const HomeSection = () => {
             <div className="container max-w-4xl mx-auto text-center z-5">
                 <div className="space-y-6">
                     <h1 className="text-4xl md:text-6xl font-light tracking-tight">
-                        <span className="opacity-0 animate-fade-in"> Hey there, </span>
+                        <span className="opacity-0 animate-fade-in"> Hi there, </span>
                         <span className="opacity-0 animate-fade-in-delay-1"> my name is</span>
                     </h1>
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-10">
@@ -53,7 +53,7 @@ export const HomeSection = () => {
 
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce-scroll">
                 <span className="text-med text-muted-foreground/50 mb-2"> Keep Scrolling </span>
-                <ArrowBigDownDash className="h-8 w-5 text-primary" />
+                <ArrowBigDownDash className="h-16 w-10 text-primary text-glow" />
             </div>
         </section>
     )

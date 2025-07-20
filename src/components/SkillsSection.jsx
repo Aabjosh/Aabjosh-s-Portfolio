@@ -49,7 +49,7 @@ export const SkillsSection = () => {
         <section id="skills" className="py-24 px-4 relative bg-secondary/30">
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-                    My <span className="text-primary text-glow">Skills</span>
+                    My <span className="text-primary">Skills</span>
                 </h2>
 
                 <p className="font-semibold text-center text-medium mb-20 text-foreground/85">
@@ -64,13 +64,15 @@ export const SkillsSection = () => {
                             </h3>
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                                 {categorySkills.map((skill, key) => (
-                                    <div key={key} className="bg-card/65 p-6 rounded-xl shadow-xs card-hover flex flex-col justify-center backdrop-blur-xs">
+                                    <div key={key} className="bg-card/65 p-6 rounded-4xl shadow-xs card-hover flex flex-col justify-center backdrop-blur-xs border-2">
                                         <div className="mb-4">
                                             <h4 className="font-bold text-lg">{skill.name}</h4>
                                         </div>
                                         <div className="text-sm flex items-center gap-2 justify-center">
                                             <span className="text-foreground">Level: </span>
-                                            <span className="text-primary font-bold animate-pulse-slow">{skill.level}</span>
+                                            <div className="px-2 py-1 rounded-full border-primary bg-primary animate-pulse-slow">
+                                                <span className="text-card font-bold">{skill.level}</span>
+                                            </div>
                                         </div>
                                     </div>
                                 ))}

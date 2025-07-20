@@ -53,7 +53,7 @@ export const HomeSection = () => {
 
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce-scroll">
                 <span className="text-med text-muted-foreground/50 mb-2"> Keep Scrolling </span>
-                <ArrowBigDownDash className="h-16 w-10 text-primary" />
+                <ArrowBigDownDash className="h-16 w-10 text-primary text-glow" />
             </div>
         </section>
     )

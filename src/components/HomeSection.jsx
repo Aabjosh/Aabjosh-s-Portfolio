@@ -21,8 +21,8 @@ export const HomeSection = () => {
                         <span className="opacity-0 animate-fade-in-delay-3">✦ Glad you're here ✦</span>
                     </h2>
  
-                    <p className="text-lg md:xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4">
-                        I’m studying Mechatronics Engineering at UWaterloo, exploring robotics and automation.
+                    <p className="text-xl md:xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4 mb-12">
+                        I study Mechatronics Engineering at UWaterloo, exploring robotics + automation.
 
                     </p>
 

@@ -53,6 +53,7 @@ const work = [
     {
         id: 5,
         name: "UWaterloo Engineering Outreach",
+        timeframe: "2023-2025",
         position: "High School Outreach Instructor",
         picture: "/work/University_of_Waterloo_seal.png",
         external: "https://uwaterloo.ca/engineering-outreach",

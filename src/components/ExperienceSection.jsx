@@ -1,3 +1,5 @@
+import links from "@/links.json"
+
 const education = [
     {
         name: "University of Waterloo",
@@ -99,7 +101,7 @@ export const ExperienceSection = () => {
                 Tap/click on the cards to visit their websites!
             </p>
             <div className="flex justify-center mb-12">
-                <a href="https://drive.google.com/file/d/1YG7DlP0Pslf46Dktwe5Aurz-xwBrK2bp/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="cosmic-button">
+                <a href={links.cv} target="_blank" rel="noopener noreferrer" className="cosmic-button">
                     {" "}
                     See my CV
                 </a>

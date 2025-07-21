@@ -11,6 +11,7 @@ import {
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+import links from "@/links.json"
 
 export const ContactSection = () => {
   const { toast } = useToast();
@@ -50,10 +51,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> My Email:</h4>
                   <a
-                    href="mailto:aabjosh0singh@gmail.com"
+                    href={links.email.address}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    aabjosh0singh@gmail.com
+                    {links.email.name}
                   </a>
                 </div>
               </div>
@@ -89,12 +90,12 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> My LinkedIn</h4>
                   <a 
-                    href="https://linkedin.com/in/aabjosh"
+                    href={links.linkedin.address}
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    linkedin.com/in/aabjosh
+                    {links.linkedin.name}
                   </a>
                 </div>
               </div>
@@ -104,12 +105,12 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium"> My Instagram</h4>
-                  <a href="https://www.instagram.com/aabjosh"
+                  <a href={links.instagram.address}
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    instagram.com/aabjosh
+                    {links.instagram.name}
                   </a>
                 </div>
               </div>

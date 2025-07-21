@@ -1,5 +1,5 @@
 import { Code2Icon, Handshake, Settings } from "lucide-react"
-
+import links from "@/links.json"
 
 export const AboutSection = () => {
     return <section id="about" className="py-24 px-4 relative">
@@ -28,7 +28,7 @@ export const AboutSection = () => {
                     </p>
 
                     <p className="texst-muted-foreground">
-                        I also enjoy photography as a hobby! Feel free to check out my <a href="https://unsplash.com/@aabjosh" target="_blank" rel="noopener noreferrer" className="font-bold text-foreground underline">Unsplash</a>
+                        I also enjoy photography as a hobby! Feel free to check out my <a href={links.unsplash} target="_blank" rel="noopener noreferrer" className="font-bold text-foreground underline">Unsplash</a>
                           . You might catch me out on a run too - I used to compete at a national level in track and field.
                     </p>
 
@@ -38,7 +38,7 @@ export const AboutSection = () => {
                             Let's Talk
                         </a>
 
-                        <a href="https://drive.google.com/file/d/1YG7DlP0Pslf46Dktwe5Aurz-xwBrK2bp/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary/10 transition-colors duration-300 ">
+                        <a href={links.cv} target="_blank" rel="noopener noreferrer" className="cosmic-button">
                             {" "}
                             Download my CV
                         </a>
@@ -71,7 +71,7 @@ export const AboutSection = () => {
                                     Working on vision-related projects, machine learning with PyTorch, control system applications such as WPIlib, 
                                     but also programming in C++ and MicroPy using microcontrollers.
                                 </p>
-                                <a href="https://github.com/Aabjosh" target="_blank" rel="noopener noreferrer" className="font-bold text-foreground underline">Check out my GitHub!</a>
+                                <a href={links.github} target="_blank" rel="noopener noreferrer" className="font-bold text-foreground underline">Check out my GitHub!</a>
                             </div>
                         </div>
                     </div>

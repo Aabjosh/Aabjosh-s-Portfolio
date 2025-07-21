@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import links from '@/links.json'
 
 const navItems = [
     {name: "Home", href: "#home"},
@@ -32,14 +33,12 @@ export const Navbar = () => {
         >
 
             <div className="container flex items-center justify-center font-medium">
-                {/* <a className="text-xl font-bold text-primary flex items-center" href="#home">
-                    <span className="relative z-10">
-                        <span className="text-foreground"> Aabjosh's </span> Portfolio
-                    </span>
-                </a> */}
-
+                
                 {/* DESKTOP */}
-                <div className="hidden md:flex space-x-16">
+                <div className="hidden md:flex space-x-16 items-center">
+                    <a href={links.cv} target="_blank" rel="noopener noreferrer" className="px-3 py-1 rounded-xl bg-primary/50 card-hover hover:scale-110 hover:bg-primary hover:text-primary-foreground transition-transform duration-300">
+                        <span className="font-medium">My CV</span>
+                    </a>
                     {navItems.map((item, key) => (
                         <a key={key} href={item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300">
                             {item.name}

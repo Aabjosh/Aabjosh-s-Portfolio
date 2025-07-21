@@ -11,7 +11,7 @@ const projects = [
     },
     {
         id: 2,
-        title: "Strobeshield",
+        title: "StrobeShield",
         description: "An award-winning hackathon project glasses that use flickering light-triggered photoresistors to polarize their lenses and prevent photo epilepsy seizures, with real-time event logging.",
         image: "/projects/Screenshot 2025-07-18 201301.png",
         tags: ["Raspberry Pi", "MicroPython", "SOLIDWORKS"],

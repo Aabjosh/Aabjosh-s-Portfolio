@@ -33,16 +33,15 @@ export const HomeSection = () => {
                         </a>
                     </div>
                     <div className="flex justify-center gap-2 pt-0 opacity-0 animate-fade-in-delay-4 text-sm">
-                        <a href={links.email.address} title="Email" className="flex px-3 py-2 rounded-full bg-background border-4 border-primary/50 card-hover items-center hover:scale-110 hover:border-primary transition-transform duration-300">
-                            {" "}
-                            <Mail />
+                        <a href={links.email.address} title="Email" className="flex p-2 rounded-full bg-background border-4 border-primary/50 card-hover items-center hover:scale-110 hover:border-primary transition-transform duration-300">
+                            <Mail className="w-5 h-5"/>
                         </a>
 
-                        <a href={links.linkedin.address} target="_blank" rel="noopener noreferrer" title="LinkedIn" className="p-2 rounded-full bg-background border-4 border-primary/50 card-hover hover:border-primary hover:scale-110 transition-transform duration-300">
+                        <a href={links.linkedin.address} target="_blank" rel="noopener noreferrer" title="LinkedIn" className="p-2 rounded-full bg-background border-4 border-primary/50 card-hover items-center hover:border-primary hover:scale-110 transition-transform duration-300">
                             <Linkedin className="w-5 h-5"/>
                         </a>
 
-                        <a href={links.github} target="_blank" rel="noopener noreferrer" title="GitHub" className="p-2 rounded-full bg-background border-4 border-primary/50 card-hover hover:scale-110 hover:border-primary transition-transform duration-300">
+                        <a href={links.github} target="_blank" rel="noopener noreferrer" title="GitHub" className="p-2 rounded-full bg-background border-4 border-primary/50 card-hover items-center hover:scale-110 hover:border-primary transition-transform duration-300">
                             <Github className="w-5 h-5"/>
                         </a>
                     </div>

@@ -76,7 +76,7 @@ export const ExperienceSection = () => {
                 {education.map((edu, key) => (
                     <div key={key} className="group bg-primary/50 rounded-4xl overflow-hidden shadow-xs card-hover backdrop-blur-xs p-5">
                         <div className="flex gap-2 items-center justify-between mb-2">
-                            <h3 className="text-xl font-bold px-4 italic text-left">{edu.name}</h3>
+                            <h3 className="text-xl font-bold px-4 text-left">{edu.name}</h3>
                             <p className="text-muted-foreground px-4 text-right">{edu.timeframe}</p>
                         </div>
                         <div className="text-left px-4 text-md mb-2">

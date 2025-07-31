@@ -1,20 +1,23 @@
 const skills = [
   // Hardware
   { name: "Arduino", level: "Fluent", category: "⚙️ Hardware" },
-  { name: "Drivetrain & Mechanical", level: "Fluent", category: "⚙️ Hardware" },
+  { name: "Drivetrains", level: "Fluent", category: "⚙️ Hardware" },
+  { name: "Mechanical Design", level: "Fluent", category: "⚙️ Hardware" },
   { name: "Circuit Board Prototyping", level: "Proficient", category: "⚙️ Hardware" },
   { name: "Raspberry Pi", level: "Capable", category: "⚙️ Hardware" },
 
   // CAD Design
-  { name: "Fusion 360", level: "Fluent", category: "📐 CAD Design" },
-  { name: "Inventor", level: "Fluent", category: "📐 CAD Design" },
-  { name: "SOLIDWORKS", level: "Fluent", category: "📐 CAD Design" },
-  { name: "OnShape", level: "Capable", category: "📐 CAD Design" },
+  { name: "Fusion 360", level: "Fluent", category: "📐 Computer-Aided Design" },
+  { name: "Inventor", level: "Fluent", category: "📐 Computer-Aided Design" },
+  { name: "SOLIDWORKS", level: "Fluent", category: "📐 Computer-Aided Design" },
+  { name: "OnShape", level: "Capable", category: "📐 Computer-Aided Design" },
+  { name: "SketchUp", level: "Capable", category: "📐 Computer-Aided Design" },
 
   // Production
   { name: "3D Printing", level: "Fluent", category: "🛠️ Production" },
   { name: "Soldering", level: "Fluent", category: "🛠️ Production" },
-  { name: "Lathe + Mill", level: "Proficient", category: "🛠️ Production" },
+  { name: "Lathe", level: "Proficient", category: "🛠️ Production" },
+  { name: "Mill", level: "Proficient", category: "🛠️ Production" },
   { name: "Rapid Prototyping", level: "Proficient", category: "🛠️ Production" },
 
   // Software & Programming
@@ -58,22 +61,22 @@ export const SkillsSection = () => {
 
                 <div className="space-y-12">
                     {Object.entries(skillsByCategory).map(([category, categorySkills]) => (
-                        <div key={category} className="space-y-6">
-                            <h3 className="text-2xl font-bold text-center text-foreground">
+                        <div key={category} className="bg-card/70 rounded-4xl p-6 border-2 space-y-6">
+                            <h3 className="text-2xl font-bold text-center text-foreground mb-6">
                                 {category}
                             </h3>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {categorySkills.map((skill, key) => (
-                                    <div key={key} className="bg-card/65 p-6 rounded-4xl shadow-xs card-hover flex flex-col justify-center backdrop-blur-xs border-2">
-                                        <div className="mb-4">
+                                    <div key={key} className="bg-primary/50 p-2 rounded-full shadow-xs card-hover flex flex-col justify-center backdrop-blur-xs animate-pulse-slow">
+                                        <div className="">
                                             <h4 className="font-bold text-lg">{skill.name}</h4>
                                         </div>
-                                        <div className="text-sm flex items-center gap-2 justify-center">
+                                        {/* <div className="text-sm flex items-center gap-2 justify-center">
                                             <span className="text-foreground">Level: </span>
                                             <div className="px-2 py-1 rounded-full border-primary bg-primary animate-pulse-slow">
                                                 <span className="text-card font-bold">{skill.level}</span>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 ))}
                             </div>

@@ -61,11 +61,11 @@ export const SkillsSection = () => {
 
                 <div className="space-y-12">
                     {Object.entries(skillsByCategory).map(([category, categorySkills]) => (
-                        <div key={category} className="bg-card/70 rounded-4xl p-6 border-2 space-y-6">
+                        <div key={category} className="space-y-6">
                             <h3 className="text-2xl font-bold text-center text-foreground mb-6">
                                 {category}
                             </h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div className="bg-card/70 rounded-4xl p-6 border-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {categorySkills.map((skill, key) => (
                                     <div key={key} className="bg-primary/50 p-2 rounded-full shadow-xs card-hover flex flex-col justify-center backdrop-blur-xs animate-pulse-slow">
                                         <div className="">

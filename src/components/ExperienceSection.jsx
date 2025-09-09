@@ -103,7 +103,7 @@ export const ExperienceSection = () => {
             <div className="flex justify-center mb-12">
                 <a href={links.cv} target="_blank" rel="noopener noreferrer" className="cosmic-button">
                     {" "}
-                    See my CV
+                    See my Resume
                 </a>
             </div> 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-20">

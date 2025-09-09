@@ -40,7 +40,7 @@ export const AboutSection = () => {
 
                         <a href={links.cv} target="_blank" rel="noopener noreferrer" className="cosmic-button">
                             {" "}
-                            Download my CV
+                            Download my Resume
                         </a>
 
                     </div>

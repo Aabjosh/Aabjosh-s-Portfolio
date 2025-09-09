@@ -37,7 +37,7 @@ export const Navbar = () => {
                 {/* DESKTOP */}
                 <div className="hidden md:flex space-x-16 items-center">
                     <a href={links.cv} target="_blank" rel="noopener noreferrer" className="px-3 py-1 rounded-xl bg-primary/50 card-hover hover:scale-110 hover:bg-primary hover:text-primary-foreground transition-transform duration-300">
-                        <span className="font-medium">My CV</span>
+                        <span className="font-medium">My Resume</span>
                     </a>
                     {navItems.map((item, key) => (
                         <a key={key} href={item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300">
@@ -68,7 +68,7 @@ export const Navbar = () => {
 					>
 					<div className="flex flex-col space-y-8 text-xl">
                         <a href={links.cv} target="_blank" rel="noopener noreferrer" className="px-3 py-1 rounded-xl bg-primary/50 card-hover hover:scale-110 hover:bg-primary hover:text-primary-foreground transition-transform duration-300">
-                            <span className="font-medium">My CV</span>
+                            <span className="font-medium">My Resume</span>
                         </a>
 						{navItems.map((item, key) => (
 						<a

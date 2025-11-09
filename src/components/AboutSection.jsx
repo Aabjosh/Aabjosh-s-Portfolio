@@ -12,7 +12,7 @@ export const AboutSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
                     <div className="flex justify-center">
-                        <img src="/IMG_6092.jpg" alt="Me" className="flex w-40 h-40 rounded-full shadow-md shadow-foreground" />
+                        <img src="/1750739840532.jpg" alt="Me" className="flex w-40 h-40 rounded-full shadow-md shadow-foreground" />
                     </div>
                     <h3 className="text-2xl font-semibold">
                         Founder and Creator

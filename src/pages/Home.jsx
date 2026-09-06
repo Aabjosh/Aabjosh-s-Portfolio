@@ -18,9 +18,9 @@ export const Home = () => {
             <ThemeToggle />
 
             {/* BACKGROUND */}
-            <StarBackground>
+            {/* <StarBackground>
 
-            </StarBackground>
+            </StarBackground> */}
             {/* NAVBAR */}
             <Navbar>
                 
@@ -30,7 +30,6 @@ export const Home = () => {
                 <HomeSection />
                 <AboutSection />
                 <ProjectsSection />
-                <SkillsSection />
                 <ExperienceSection />
                 <ContactSection />
             </main>

@@ -98,12 +98,12 @@
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
 
-    --card: 211, 70%, 90%;
+    --card: 262, 70%, 96%;
 
-    --primary: 210, 85%, 54%;
+    --primary: 265, 79%, 71%;
     --primary-foreground: 210 40% 98%;
 
-    --border: 214 32% 91%;
+    --border: 271 32% 91%;
 
     --starColor: #310062;
   }
@@ -112,12 +112,12 @@
     --background: 0 0% 0%;
     --foreground: 213 31% 91%;
 
-    --card: 222, 52%, 18%;
+    --card: 269, 52%, 12%;
 
-    --primary: 205, 86%, 45%;
+    --primary: 265, 79%, 62%;
     --primary-foreground: 213 31% 91%;
 
-    --border: 217 33% 20%;
+    --border: 271 33% 20%;
 
     --starColor: white;
   }
@@ -175,9 +175,7 @@
 }
 
 @utility cosmic-button {
-  @apply px-6 py-2 rounded-xl bg-primary text-primary-foreground font-bold border-2 border-primary 
-         transition-all duration-300 hover:shadow-[0_0_10px_rgba(24,176,251,0.5)]
-         hover:scale-110 active:scale-95;
+  @apply px-6 py-2 rounded-xl text-foreground font-medium bg-background border-4 border-primary/50 card-hover items-center hover:scale-110 hover:border-primary transition-transform duration-300;
 }
 
 @utility star {

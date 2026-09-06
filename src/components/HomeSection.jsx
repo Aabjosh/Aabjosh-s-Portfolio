@@ -11,37 +11,25 @@ export const HomeSection = () => {
             <div className="container max-w-4xl mx-auto text-center z-5">
                 <div className="space-y-6">
                     <h1 className="text-4xl md:text-6xl font-light tracking-tight">
-                        <span className="opacity-0 animate-fade-in"> Hi there, </span>
-                        <span className="opacity-0 animate-fade-in-delay-1"> my name is</span>
-                    </h1>
-                    <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-10">
+                        <span className="opacity-0 animate-fade-in"> Hi, </span>
+                        <span className="opacity-0 animate-fade-in-delay-1">I'm </span>
                         <span className="text-primary ml-2 opacity-0 animate-fade-in-delay-2"> Aabjosh Singh</span>
                     </h1>
-                    <h2 className="text-xl md:text-2xl font-medium tracking-tight mb-12">
-                        <span className="opacity-0 animate-fade-in-delay-3">✦ Glad you're here ✦</span>
-                    </h2>
  
-                    <p className="text-xl md:xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4 mb-12">
-                        I study Mechatronics Engineering at UWaterloo, exploring robotics + automation.
-
+                    <p className="text-xl md:xl font-medium text-foreground/75 max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4 mb-10">
+                        Firmware @ <a href={"https://www.ndigital.com/"} target="_blank" rel="noopener noreferrer" className="font-bold underline">NDI</a>, Tron @ UWaterloo
                     </p>
 
-                    <div className="flex justify-center gap-4 pt-2 opacity-0 animate-fade-in-delay-4 text-lg">
-                        <a href="#projects" className="cosmic-button">
-                            {" "}
-                            Take a look at some of my work
-                        </a>
-                    </div>
                     <div className="flex justify-center gap-2 pt-0 opacity-0 animate-fade-in-delay-4 text-sm">
-                        <a href={links.email.address} title="Email" className="flex p-2 rounded-full bg-background border-4 border-primary/50 card-hover items-center hover:scale-110 hover:border-primary transition-transform duration-300">
+                        <a href={links.email.address} title="Email" className="flex p-4 rounded-full bg-background border-4 border-primary/50 card-hover items-center hover:scale-110 hover:border-primary transition-transform duration-300">
                             <Mail className="w-5 h-5"/>
                         </a>
 
-                        <a href={links.linkedin.address} target="_blank" rel="noopener noreferrer" title="LinkedIn" className="p-2 rounded-full bg-background border-4 border-primary/50 card-hover items-center hover:border-primary hover:scale-110 transition-transform duration-300">
+                        <a href={links.linkedin.address} target="_blank" rel="noopener noreferrer" title="LinkedIn" className="flex p-4 rounded-full bg-background border-4 border-primary/50 card-hover items-center hover:scale-110 hover:border-primary transition-transform duration-300">
                             <Linkedin className="w-5 h-5"/>
                         </a>
 
-                        <a href={links.github} target="_blank" rel="noopener noreferrer" title="GitHub" className="p-2 rounded-full bg-background border-4 border-primary/50 card-hover items-center hover:scale-110 hover:border-primary transition-transform duration-300">
+                        <a href={links.github} target="_blank" rel="noopener noreferrer" title="GitHub" className="fflex p-4 rounded-full bg-background border-4 border-primary/50 card-hover items-center hover:scale-110 hover:border-primary transition-transform duration-300">
                             <Github className="w-5 h-5"/>
                         </a>
                     </div>

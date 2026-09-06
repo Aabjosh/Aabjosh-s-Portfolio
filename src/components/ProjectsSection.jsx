@@ -2,7 +2,7 @@ import { Book, BookAIcon, BookOpen } from "lucide-react"
 
 const projects = [
     {
-        id: 1,
+        id: 0,
         title: "Autobat",
         description: "A microcontroller-powered T-ball batting system designed for children at KidsAbility with motor impairments, enabling accessible and independent play through the push of a button.",
         image: "/projects/Screenshot 2025-07-18 201247.png",
@@ -10,7 +10,7 @@ const projects = [
         projectLink: "https://github.com/Aabjosh/KidsAbility-Autobat/blob/main/README.md",
     },
     {
-        id: 2,
+        id: 0,
         title: "StrobeShield",
         description: "An award-winning hackathon project glasses that use flickering light-triggered photoresistors to polarize their lenses and prevent photo epilepsy seizures, with real-time event logging.",
         image: "/projects/Screenshot 2025-07-18 201301.png",
@@ -18,7 +18,7 @@ const projects = [
         projectLink: "https://github.com/Aabjosh/StrobeShield/blob/main/README.md",
     },
     {
-        id: 3,
+        id: 0,
         title: "Shape Detector Convolutional Neural Network",
         description: "A personal project using deep learning with PyTorch + OpenCV to detect circles, squares, and triangles, featuring a GUI to choose training parameters.",
         image: "/projects/Screenshot 2025-07-18 210622.png",
@@ -32,7 +32,7 @@ export const ProjectsSection = () => {
         <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
                 {" "}
-                Featured <span className="text-primary"> Projects</span>
+                Projects
             </h2>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto font-bold">
                 Take a look at some of my work in creating full systems, and some software!

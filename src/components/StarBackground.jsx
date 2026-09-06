@@ -19,7 +19,7 @@ export const StarBackground = () => {
 
   const generateStars = () => {
     const numberOfStars = Math.floor(
-      (window.innerWidth * window.innerHeight) / 7500
+      (window.innerWidth * window.innerHeight) / 50000
     );
 
     const newStars = [];

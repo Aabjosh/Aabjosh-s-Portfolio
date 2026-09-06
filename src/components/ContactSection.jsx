@@ -49,7 +49,7 @@ export const ContactSection = () => {
                   <Mail className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium"> My Email:</h4>
+                  <h4 className="font-bold"> My Email:</h4>
                   <a
                     href={links.email.address}
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -60,35 +60,10 @@ export const ContactSection = () => {
               </div>
               <div className="flex items-start space-x-4 justify-center">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />{" "}
-                </div>
-                <div>
-                  <h4 className="font-medium"> My Phone Number:</h4>
-                  <a
-                    href="tel:+15195056171"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    +1 (519) 505-6171
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4 justify-center">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <MapPin className="h-6 w-6 text-primary" />{" "}
-                </div>
-                <div>
-                  <h4 className="font-medium"> Where I'm Based</h4>
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Kitchener-Waterloo, ON, Canada
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4 justify-center">
-                <div className="p-3 rounded-full bg-primary/10">
                   <Linkedin className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium"> My LinkedIn</h4>
+                  <h4 className="font-bold"> My LinkedIn</h4>
                   <a 
                     href={links.linkedin.address}
                     target="_blank" 
@@ -104,7 +79,7 @@ export const ContactSection = () => {
                   <Instagram className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium"> My Instagram</h4>
+                  <h4 className="font-bold"> My Instagram</h4>
                   <a href={links.instagram.address}
                     target="_blank" 
                     rel="noopener noreferrer"

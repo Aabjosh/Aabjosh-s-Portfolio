@@ -16,12 +16,14 @@ export const HomeSection = () => {
                         <span className="opacity-0 animate-fade-in-delay-1">I'm </span>
                         <span className="text-primary ml-2 opacity-0 animate-fade-in-delay-2"> Aabjosh Singh</span>
                     </h1>
+
+                    <LogoCarousel />
  
                     <p className="text-xl md:xl font-medium text-foreground/75 max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4 mb-10">
                         Firmware @ <a href={"https://www.ndigital.com/"} target="_blank" rel="noopener noreferrer" className="font-bold underline">NDI</a>, Tron @ UWaterloo
                     </p>
 
-                    <div className="flex justify-center gap-2 pt-0 opacity-0 animate-fade-in-delay-4 text-sm">
+                    <div className="flex justify-center gap-2 pt-0 opacity-0 animate-fade-in-delay-4 text-sm mb-12">
                         <a href={links.email.address} title="Email" className="flex p-4 rounded-full bg-background border-4 border-primary/50 card-hover items-center hover:scale-110 hover:border-primary transition-transform duration-300">
                             <Mail className="w-5 h-5"/>
                         </a>
@@ -34,7 +36,10 @@ export const HomeSection = () => {
                             <Github className="w-5 h-5"/>
                         </a>
                     </div>
-                    {/* <LogoCarousel /> */}
+
+                    <p className="text-sm md:xl font-medium text-foreground/50 max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4 mb-10">
+                        (Site is best viewed landscape, or on a computer)
+                    </p>
                 </div>
             </div>
 

@@ -22,7 +22,7 @@ export const LogoCarousel = () => {
         if (!el) return;
 
         let animationFrameId;
-        const speed = 0.4; // pixels per frame
+        const speed = 0.8; // pixels per frame
 
         const step = () => {
             positionRef.current += speed;
@@ -43,14 +43,14 @@ export const LogoCarousel = () => {
     return (
         <div
             ref={scrollRef}
-            className="flex gap-12 overflow-x-hidden w-full max-w-4xl mx-auto py-2 opacity-0 animate-fade-in-delay-4"
+            className="flex gap-12 overflow-x-hidden w-full max-w-xl mx-auto py-2 opacity-0 animate-fade-in-delay-4"
         >
             {loopedLogos.map((logo, index) => (
                 <img
                     key={`${logo.name}-${index}`}
                     src={logo.src}
                     alt={logo.name}
-                    className="h-10 md:h-12 w-auto shrink-0 object-contain opacity-70 grayscale"
+                    className="h-10 md:h-12 w-auto shrink-0 object-contain opacity-50"
                 />
             ))}
         </div>

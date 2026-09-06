@@ -79,9 +79,9 @@ export const ProjectsSection = () => {
             <div className="flex justify-center mt-8 mb-8">
                 <Link 
                     to="/projects" 
-                    className="flex items-center gap-2 px-5 py-2 rounded-xl bg-primary/50 card-hover hover:scale-105 hover:bg-primary hover:text-primary-foreground transition-transform duration-300 font-medium"
+                    className="cosmic-button"
                 >
-                    View All Projects <ArrowRight size={18} />
+                    View All Projects
                 </Link>
             </div>
         </div>

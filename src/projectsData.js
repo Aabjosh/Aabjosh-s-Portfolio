@@ -40,7 +40,7 @@ export const projects = [
                         "Every design went through CAD modeling first, then prototyping on a Formlabs Form 2 and a BambuLab X1C, working through iterations to account for print tolerances, orientation, and material choice so the final parts could hold up to daily use by kids.", 
                         "I brought other students onto the project who wanted to learn, giving them the opportunity to grow their CAD skills through hands-on work on real parts."],
         image: "/projects/3d_Aids.jpg",
-        tags: ["CAD", "Autodesk Inventor", "SOLIDWORKS", "Additive Manufacturing", "Engineering Cycle"],
+        tags: ["Autodesk Inventor", "SOLIDWORKS"],
         projectLink: "NO_LINK",
     },
     {

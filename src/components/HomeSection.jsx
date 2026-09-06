@@ -1,5 +1,6 @@
 import { ArrowBigDownDash, BriefcaseIcon, File, Github, GithubIcon, Linkedin, LucideGithub, Mail } from "lucide-react"
 import links from "@/links.json"
+import { LogoCarousel } from "./LogoCarousel.jsx"
 
 
 export const HomeSection = () => {
@@ -33,6 +34,7 @@ export const HomeSection = () => {
                             <Github className="w-5 h-5"/>
                         </a>
                     </div>
+                    {/* <LogoCarousel /> */}
                 </div>
             </div>
 

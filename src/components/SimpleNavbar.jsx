@@ -5,10 +5,6 @@ import links from '@/links.json'
 
 const navItems = [
     {name: "Home", href: "/"},
-    {name: "About", href: "/#about"},
-	{name: "Projects", href: "/projects"},
-    {name: "Experience", href: "/#experience"},
-    {name: "Contact", href: "/#contact"},
 ]
 
 // why isnt this committing?
@@ -28,9 +24,9 @@ export const Navbar = () => {
 
     return (
         <nav className={cn(
-			"fixed w-full z-40 transition-all duration-300",
-			isScrolled ? "py-3 bg-background shadow-xs" : "py-5"
-		)}
+            "fixed w-full z-40 transition-all duration-300",
+            isScrolled ? "py-3 bg-background shadow-xs" : "py-5"
+        )}
         >
 
             <div className="container flex items-center justify-center font-medium">
@@ -59,30 +55,30 @@ export const Navbar = () => {
 
                     {/* Blurred overlay with nav */}
                 <div
-					className={cn(
-						"fixed inset-0 bg-background/20 backdrop-blur-xl z-40 flex flex-col items-center justify-center",
-						"transition-all duration-300 md:hidden",
-						isMenuOpen
-						? "opacity-100 pointer-events-auto"
-						: "opacity-0 pointer-events-none"
-					)}
-					>
-					<div className="flex flex-col space-y-8 text-xl">
+                    className={cn(
+                        "fixed inset-0 bg-background/20 backdrop-blur-xl z-40 flex flex-col items-center justify-center",
+                        "transition-all duration-300 md:hidden",
+                        isMenuOpen
+                        ? "opacity-100 pointer-events-auto"
+                        : "opacity-0 pointer-events-none"
+                    )}
+                    >
+                    <div className="flex flex-col space-y-8 text-xl">
                         <a href={links.cv} target="_blank" rel="noopener noreferrer" className="px-3 py-1 rounded-xl bg-primary/50 card-hover hover:scale-110 hover:bg-primary hover:text-primary-foreground transition-transform duration-300">
                             <span className="font-medium">My Resume</span>
                         </a>
-						{navItems.map((item, key) => (
-						<a
-							key={key}
-							href={item.href}
-							className="text-foreground/80 hover:text-primary transition-colors duration-300"
-							onClick={() => setIsMenuOpen(false)}
-						>
-							{item.name}
-						</a>
-						))}
-					</div>
-				</div>
+                        {navItems.map((item, key) => (
+                        <a
+                            key={key}
+                            href={item.href}
+                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            {item.name}
+                        </a>
+                        ))}
+                    </div>
+                </div>
             </div>
         </nav>
     );

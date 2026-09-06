@@ -3,6 +3,7 @@ import { HomeSection } from "../components/HomeSection.jsx";
 import { Navbar } from "../components/Navbar.jsx";
 import { ThemeToggle } from "../components/ThemeToggle.jsx";
 import { StarBackground } from "@/components/StarBackground"
+import { GradientBackground } from "@/components/GradientBackground"
 import '@fontsource/poppins';
 import { SkillsSection } from "../components/SkillsSection.jsx";
 import { ExperienceSection } from "../components/ExperienceSection.jsx";
@@ -18,9 +19,9 @@ export const Home = () => {
             <ThemeToggle />
 
             {/* BACKGROUND */}
-            {/* <StarBackground>
+            {/* <GradientBackground>
 
-            </StarBackground> */}
+            </GradientBackground> */}
             {/* NAVBAR */}
             <Navbar>
                 

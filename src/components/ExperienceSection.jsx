@@ -50,7 +50,7 @@ const work = [
         position: "Assistive Technology Developer",
         picture: "/work/butterfly-removebg-preview.png",
         external: "https://www.kidsability.ca",
-        description: "I'm building wired and wireless EMG/EIT switch wearables, actuated systems, and custom PCB-based automation projects using tools like ESP32s, Arduinos, and 3D-printed components. I developed a 10x cost-reduced automated batting arm for adaptive t-ball, which was used at a supportive children's league event, and created soft-touch communication aids for youth facing speech and anxiety challenges. I've impacted 50-100+ neurodivergent and disabled youth through this initiative so far, inspiring the launch of Project Astraeus."
+        description: "I'm building wired and wireless EMG switch wearables, actuated systems, and custom PCB-based automation using ESP32s, Arduinos, and 3D-printed components. I developed and programmed a 10x cost-reduced automated batting arm for adaptive t-ball, which has been in service for multiple years. I also led a team building 3D-printed communication aids for youth facing speech and anxiety challenges. I've impacted 50-100+ neurodivergent and disabled youth through this work, with more projects on the way. This initiative inspired the launch of Project Astraeus."
     },
     {
         id: 0,

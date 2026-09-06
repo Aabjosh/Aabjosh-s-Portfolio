@@ -50,7 +50,7 @@ export const LogoCarousel = () => {
                     key={`${logo.name}-${index}`}
                     src={logo.src}
                     alt={logo.name}
-                    className="h-10 md:h-12 w-auto shrink-0 object-contain opacity-50"
+                    className="h-10 md:h-12 w-auto shrink-0 object-contain opacity-80"
                 />
             ))}
         </div>
